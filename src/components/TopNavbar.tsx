@@ -85,6 +85,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
           fire: '3. Fire Prevention (APAR)',
           hydrant: '4. Sistem & Pekerjaan Hydrant (AO/AI)',
           program: '5. Program K3 Lainnya',
+          other: '6. Lain-lain',
         };
         return { group: 'Menu K3', name: k3Names[k3Submenu] };
       case 'keamanan':

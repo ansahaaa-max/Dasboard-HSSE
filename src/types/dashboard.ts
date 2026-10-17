@@ -12,7 +12,7 @@ export type ULTGLocation =
 
 export type MainNavSection = 'dashboard' | 'k3' | 'keamanan' | 'anggaran';
 
-export type K3Submenu = 'maturity' | 'apd' | 'fire' | 'hydrant' | 'program';
+export type K3Submenu = 'maturity' | 'apd' | 'fire' | 'hydrant' | 'program' | 'other';
 export type KeamananSubmenu = 'maturity' | 'cctv' | 'sarpras' | 'portal' | 'satpam';
 export type AnggaranSubmenu = 'all' | 'k3' | 'keamanan' | 'rencana' | 'realisasi' | 'sisa';
 

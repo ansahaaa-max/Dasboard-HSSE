@@ -21,7 +21,8 @@ import {
   Sun, 
   X,
   FileSpreadsheet,
-  Droplets
+  Droplets,
+  MoreHorizontal
 } from 'lucide-react';
 import { CorporateBrandLockup } from './Logos';
 import { MainNavSection, K3Submenu, KeamananSubmenu, AnggaranSubmenu } from '../types/dashboard';
@@ -259,6 +260,19 @@ export const Sidebar: React.FC<SidebarProps> = ({
                       {badgeCounts.k3Issues} kendala
                     </span>
                   )}
+                </button>
+
+                {/* Lain-lain */}
+                <button
+                  onClick={() => handleSubmenuClick('k3', () => setK3Submenu('other'))}
+                  className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
+                    currentSection === 'k3' && k3Submenu === 'other'
+                      ? isDark ? 'bg-violet-500/20 text-violet-400 font-semibold border-l-2 border-violet-400' : 'bg-violet-50 text-violet-800 font-semibold border-l-2 border-violet-600'
+                      : isDark ? 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50' : 'text-slate-600 hover:bg-slate-100'
+                  }`}
+                >
+                  <MoreHorizontal className="w-4 h-4 shrink-0 text-violet-400" />
+                  <span className="flex-1 text-left">6. Lain-lain</span>
                 </button>
               </div>
             )}

@@ -19,7 +19,8 @@ import {
   Download, 
   Edit3, 
   Trash2,
-  FileText
+  FileText,
+  MoreHorizontal
 } from 'lucide-react';
 import { 
   MaturityOverview, 
@@ -820,6 +821,18 @@ export const K3View: React.FC<K3ViewProps> = ({
           <Briefcase className="w-4 h-4" />
           <span>4. Program K3 Lainnya</span>
         </button>
+
+        <button
+          onClick={() => setSubmenu('other')}
+          className={`flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold transition-all ${
+            submenu === 'other'
+              ? 'bg-violet-600 text-white shadow-xs'
+              : isDark ? 'text-slate-400 hover:text-white hover:bg-slate-800' : 'text-slate-600 hover:bg-slate-100'
+          }`}
+        >
+          <MoreHorizontal className="w-4 h-4" />
+          <span>6. Lain-lain</span>
+        </button>
       </div>
 
       {/* Render Submenu Content */}
@@ -827,6 +840,15 @@ export const K3View: React.FC<K3ViewProps> = ({
       {submenu === 'apd' && renderApdDatabase()}
       {submenu === 'fire' && renderFirePrevention()}
       {submenu === 'program' && renderProgramK3()}
+      {submenu === 'other' && (
+        <section className={`p-6 rounded-2xl border ${isDark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'}`}>
+          <div className="flex items-center gap-3">
+            <MoreHorizontal className="w-5 h-5 text-violet-500" />
+            <h2 className="text-base font-bold">Lain-lain</h2>
+          </div>
+          <p className="mt-2 text-sm text-slate-400">Ruang untuk informasi dan kegiatan K3 di luar kategori menu lainnya.</p>
+        </section>
+      )}
     </div>
   );
 };
