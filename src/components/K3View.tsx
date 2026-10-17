@@ -819,7 +819,7 @@ export const K3View: React.FC<K3ViewProps> = ({
           }`}
         >
           <Briefcase className="w-4 h-4" />
-          <span>4. Program K3 Lainnya</span>
+          <span>5. Program K3 Lainnya</span>
         </button>
 
         <button
