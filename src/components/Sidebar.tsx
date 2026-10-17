@@ -180,7 +180,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
             {isK3Expanded && (
               <div className="space-y-1 mt-1 pl-2">
-                {/* Maturity Level K3 */}
+                {/* Matlev K3 dan Kam */}
                 <button
                   onClick={() => handleSubmenuClick('k3', () => setK3Submenu('maturity'))}
                   className={`w-full flex items-center gap-2.5 px-3 py-2 rounded-lg text-xs font-medium transition-colors ${
@@ -190,7 +190,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
                   }`}
                 >
                   <Award className="w-4 h-4 shrink-0 text-emerald-500" />
-                  <span className="flex-1 text-left">1. Maturity Level K3</span>
+                  <span className="flex-1 text-left">1. Matlev K3 dan Kam</span>
                   <span className="text-[10px] font-mono px-1.5 py-0.2 rounded bg-emerald-500/10 text-emerald-400">
                     4.18
                   </span>

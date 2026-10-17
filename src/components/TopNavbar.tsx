@@ -80,7 +80,7 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
         return { group: 'Beranda', name: 'Dashboard Utama HSSE' };
       case 'k3':
         const k3Names: Record<K3Submenu, string> = {
-          maturity: '1. Maturity Level K3',
+          maturity: '1. Matlev K3 dan Kam',
           apd: '2. Database APD',
           fire: '3. Fire Prevention (APAR)',
           hydrant: '4. Sistem & Pekerjaan Hydrant (AO/AI)',

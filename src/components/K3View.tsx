@@ -123,7 +123,7 @@ export const K3View: React.FC<K3ViewProps> = ({
         <div className={`p-6 rounded-2xl border ${isDark ? 'bg-slate-900 border-slate-800' : 'bg-white border-slate-200'}`}>
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-slate-800/40 gap-2">
             <div>
-              <h3 className="text-base font-bold text-slate-100">Grafik Perkembangan Maturity Level K3 (Historis)</h3>
+              <h3 className="text-base font-bold text-slate-100">Grafik Perkembangan Matlev K3 dan Kam (Historis)</h3>
               <p className="text-xs text-slate-400">Peningkatan budaya keselamatan kerja UPT Madiun dari tahun ke tahun</p>
             </div>
             <span className="text-xs font-mono px-3 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
@@ -783,7 +783,7 @@ export const K3View: React.FC<K3ViewProps> = ({
           }`}
         >
           <Award className="w-4 h-4" />
-          <span>1. Maturity Level K3</span>
+          <span>1. Matlev K3 dan Kam</span>
         </button>
 
         <button
