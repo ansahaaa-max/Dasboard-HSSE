@@ -46,6 +46,22 @@ import { NotificationsModal } from './components/NotificationsModal';
 import { ExportReportModal } from './components/ExportReportModal';
 
 export default function App() {
+  // Clear seeded K3 sample data once so all K3 menus start ready for real entries.
+  try {
+    const cleared = localStorage.getItem('pln_k3_sample_data_cleared_v1');
+    if (!cleared) {
+      [
+        'pln_k3_maturity',
+        'pln_apd_list',
+        'pln_fire_list',
+        'pln_prog_k3_list',
+        'pln_upt_madiun_hydrants',
+      ].forEach((key) => localStorage.removeItem(key));
+      localStorage.setItem('pln_k3_sample_data_cleared_v1', 'true');
+    }
+  } catch {
+    // Continue with empty initial data if browser storage is unavailable.
+  }
   // Theme state: dark or light
   const [theme, setTheme] = useState<'dark' | 'light'>(() => {
     try {
